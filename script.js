@@ -6,6 +6,7 @@ let weather = {
             + city
             + "&units=metric&appid="
             + this.apiKey
+            + "&lang=id"
         )
             .then((response) => response.json())
             .then((data) => this.displayWeather(data));
